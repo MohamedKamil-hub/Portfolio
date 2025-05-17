@@ -14,7 +14,7 @@ title_separator          : "-"
 name                     : &name "Mohamed Kamil El Kouarti"
 description              : &description "Me llamo mohamed y en esta pagina ire subiendo todo lo que aprenda, haga o descubra, a modo de blog de notas y asi compartir mis gustos con los demas"
 url                      : https://k4m1lk4.github.io/mohamed_kamil.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "blog"
+baseurl                  : ""
 repository               : "mohamed_kamil.github.io/"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
