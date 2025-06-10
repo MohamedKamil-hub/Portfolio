@@ -1,9 +1,7 @@
 ---
 title: "CompTIA Security+"
-collection: "notes"
-type: "Undergraduate course"
-permalink: /learning/comptia_sec_plus
-venue: "With Professor Messer"
+collection: learning
+layout: page
 date: 2025-05-18
 ---
 
