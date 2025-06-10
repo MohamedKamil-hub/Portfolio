@@ -107,6 +107,10 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  notes:
+    output: true
+    permalink: /learning/:path/
+
 
 # Defaults
 defaults:
