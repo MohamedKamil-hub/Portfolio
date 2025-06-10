@@ -1,13 +1,11 @@
 ---
-title: "Comptia secuirty +"
-collection: notes taked throught my study
+title: "CompTIA Security+"
+collection: "notes"
 type: "Undergraduate course"
 permalink: /learning/comptia_sec_plus
-venue: "With profesor messer"
+venue: "With Professor Messer"
 date: 2025-05-18
 ---
-
-This is a description of a teaching experience. You can use markdown like any other post.
 
 Heading 1
 ======
