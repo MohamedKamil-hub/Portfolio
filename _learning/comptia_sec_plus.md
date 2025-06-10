@@ -2,7 +2,7 @@
 title: "Comptia secuirty +"
 collection: notes taked throught my study
 type: "Undergraduate course"
-permalink: /teaching/comptia sec+
+permalink: /learning/comptia_sec_plus
 venue: "With profesor messer"
 date: 2025-05-18
 ---
