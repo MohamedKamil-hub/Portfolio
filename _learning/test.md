@@ -1,7 +1,7 @@
 ---
 title: "Test Page"
 collection: learning
-layout: page
+layout: default
 date: 2025-06-10
 ---
 
