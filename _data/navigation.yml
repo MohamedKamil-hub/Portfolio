@@ -11,23 +11,23 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Projects"
+  - title: "Projects + CTFs"
     url: /projects/    
 
-  - title: "Teaching"
-    url: /teaching/    
+  - title: "Learning + Certs"
+    url: /learning/    
     
   - title: "Portfolio"
     url: /portfolio/
         
   - title: "Blog Posts"
-    url: /year-archive/
+    url: /blog_posts/
     
   - title: "CV"
     url: /cv/
     
-  # - title: "CV"
-  #   url: /cv-json/
+#   - title: "CV"
+#     url: /cv-json/
     
-  - title: "Guide"
-    url: /markdown/
+  #- title: "Guide"
+  #  url: /markdown/
