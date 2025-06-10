@@ -109,7 +109,7 @@ collections:
     permalink: /:collection/:path/
   notes:
     output: true
-    permalink: /learning/:path/
+    permalink: /collection/:path/
 
 
 # Defaults
