@@ -1,7 +1,7 @@
 ---
-title: "Test Page"
+title: "Linux"
 collection: learning
-excerpt: "This is a short summary for the page."
+excerpt: "Some Linux (Bash) cmmands."
 date: 2025-06-10
 layout: single
 permalink: /learning/test/
