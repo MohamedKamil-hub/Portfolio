@@ -1,9 +1,12 @@
 ---
-title: "My First Blog Post"
+title: "physics"
 collection: blog
 layout: single
-date: 2025-06-11
-excerpt: "A short summary of this blog post."
-permalink: /blog/physics/
+date: 2025-05-18
 ---
-Here goes the full content of the blog post in markdown.
+
+These are my notes from studying for the Security+ exam with Professor Messer.
+
+<!-- more -->
+
+Then comes the rest of the note content...
