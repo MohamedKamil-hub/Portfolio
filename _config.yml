@@ -159,6 +159,14 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  - scope:
+      path: ""
+      type: learning
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
 
 # Sass
 sass:
