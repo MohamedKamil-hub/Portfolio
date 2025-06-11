@@ -7,4 +7,3 @@ layout: single
 permalink: /learning/test/
 ---
 
-This is the full content of the test page.
