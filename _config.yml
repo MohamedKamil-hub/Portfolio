@@ -49,9 +49,6 @@ yandex_site_verification :
 # Social Sharing
 twitter:
   username               : 
-facebook:
-  username               :
-
 social:
   type                   : Person
   name                   : *name
@@ -110,6 +107,11 @@ collections:
   learning:
     output: true
     permalink: /:collection/:path/
+  blog:
+    output: true
+    permalink: /:collection/:path/
+
+
 # Defaults
 defaults:
   - scope:
@@ -154,19 +156,22 @@ defaults:
       comment: true
   - scope:
       path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
-  - scope:
-      path: ""
       type: learning
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
+  - scope:
+      path: ""
+      type: blog
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+      read_time: true
+
 
 # Sass
 sass:
