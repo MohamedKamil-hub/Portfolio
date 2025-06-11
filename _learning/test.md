@@ -1,8 +1,9 @@
 ---
-title: "Test Page"
+layout: collection_archive
+title: "Learning Notes"
+permalink: /learning/
 collection: learning
-layout: default
-date: 2025-06-10
 ---
+
 
 Hello, this is a test.
