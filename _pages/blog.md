@@ -1,19 +1,14 @@
 ---
-layout: collection_archive
-title: "Blog Posts"
+layout: archive
+title: "Learning Notes"
 permalink: /blog/
+author_profile: true
 collection: blog
 ---
 
 
+{% include base_path %}
 
-<h1>{{ page.title }}</h1>
-
-<ul>
-  {% for post in site.blog reversed %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a><br>
-      <small>{{ post.excerpt }}</small>
-    </li>
-  {% endfor %}
-</ul>
+{% for post in site.blog reversed %}
+  {% include archive-single.html %}
+{% endfor %}
