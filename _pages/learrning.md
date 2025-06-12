@@ -5,7 +5,7 @@ permalink: /learning/
 author_profile: true
 collection: learning
 ---
-
+Here i post notes that i take throught my learning
 
 {% include base_path %}
 
