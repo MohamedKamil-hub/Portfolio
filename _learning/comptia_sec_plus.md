@@ -10,9 +10,6 @@ These are my notes from studying for the Security+ exam with Professor Messer.
 <!-- more -->
 
 <div id="toc"></div>
-
-
-
 ***1.1 security controls***
 
 ## CONTROL TYPES (based on how these security controls are implemented)
@@ -50,7 +47,7 @@ using other means to to temporary supply, like a power generator, blocking a ser
 influence a behavior to reduce risk, identify and store sensitive data in more secured folders
 post and "Authorized personal only" sign
 
-## Example picture
+ Example picture
 
 ![[Screenshot at 2025-05-10 11-54-15.png]]
 
@@ -492,7 +489,7 @@ DLL injection is a subtype of SQL injection that can affect the structure of the
 Overwritting a buffer of memory until it spills over into other memory areas.
 Its not simple to exploit since it can crash the entire system, and requires time to make it work as wanted, the attacker wants a buffer overflow thats repeatable .
 
-### Scenario:
+ Scenario:
 
 - **Variable A**: allocated **8 bytes** 
     
