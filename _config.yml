@@ -5,7 +5,7 @@ title_separator          : "-"
 name                     : &name "Mohamed Kamil El Kouarti"
 description              : &description "Soy Mohamed, estudiante de ciberseguridad. En esta página compartiré lo que aprendo, creo o descubro, como un blog de notas personal."
 url                      : "https://k4m1lk4.github.io/mohamed_kamil.github.io"
-baseurl                  : ""
+baseurl                  : "/mohamed_kamil.github.io"
 repository               : "K4M1LK4/mohamed_kamil.github.io"
 
 author:
@@ -212,3 +212,7 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+
+
+
