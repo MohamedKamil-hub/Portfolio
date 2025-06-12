@@ -1,6 +1,7 @@
 ---
 title: "CompTIA Security+ Notes"
 collection: learning
+author_profile: false
 layout: single
 date: 2025-06-11
 ---
