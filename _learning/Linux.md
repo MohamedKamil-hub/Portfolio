@@ -5,11 +5,11 @@ layout: single
 date: 2025-06-11
 ---
 
-These are my notes from studying Linux terminal and Bash  scripting.
+These are my notes from studying Linux terminal and Bash scripting.
 
 <!-- more -->
 
-## Indice
+## Índice
 <div id="toc"></div>
 
 ## Bandit over the wire
@@ -19,8 +19,6 @@ Contenido de la sección...
 ## Basic Concepts
 
 Más contenido...
-
-
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -40,28 +38,21 @@ document.addEventListener("DOMContentLoaded", function () {
   list += "</ul>";
   toc.innerHTML = list;
 
-  // Hacer secciones colapsables
+  // Convertir en colapsables automáticamente
   headers.forEach(h => {
-    const sectionContent = document.createElement("div");
-    sectionContent.style.display = "none";
-    sectionContent.classList.add("collapsible-content");
+    const details = document.createElement("details");
+    const summary = document.createElement("summary");
+    summary.textContent = h.textContent;
+    details.appendChild(summary);
 
     let next = h.nextElementSibling;
     while (next && !["H2", "H3"].includes(next.tagName)) {
       const temp = next.nextElementSibling;
-      sectionContent.appendChild(next);
+      details.appendChild(next);
       next = temp;
     }
 
-    const toggleButton = document.createElement("button");
-    toggleButton.textContent = "Mostrar/Ocultar";
-    toggleButton.style.marginLeft = "10px";
-    toggleButton.onclick = () => {
-      sectionContent.style.display = sectionContent.style.display === "none" ? "block" : "none";
-    };
-
-    h.appendChild(toggleButton);
-    h.after(sectionContent);
+    h.replaceWith(details);
   });
 });
 </script>
