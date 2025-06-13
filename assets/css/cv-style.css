@@ -233,3 +233,24 @@
     background-color: transparent;
   }
 }
+
+
+/* Estilos para secciones colapsables con <details> y <summary> */
+details > summary {
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+details[open] > summary {
+  color: #0366d6;
+  background-color: #d0e6ff;
+}
+
+details {
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
