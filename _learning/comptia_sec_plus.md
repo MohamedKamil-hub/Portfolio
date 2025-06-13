@@ -740,6 +740,54 @@ to prevent it you will need anti-malware, firewall. continuous updates and patch
 
 WannaCry ransomware
 
+## 2.4 Application Attacks
+**Injection attacks**
+Adding your own info into a data stream, this is possible because of bad handling of input and output, can be SQL,HTML,XML,LDAP etc...
+
+**Buffer overflows**
+Overwriting memory so much to the point it spells over other memory areas, This is possible because of bad programming and allows someone to write too much memory.
+But its hard to exploit because even when you accomplish it the app usually just crashes instead of providing some useful information.
+
+**Replay attacks**
+info transmitted over the network, to do this attack you will need access to raw network data, with the gathered info it is possible to appear as someone else.
+
+**Privilige escalation**
+Gaining higher-level access to a system, because of a bug or a design flaw
+It also be possible to perform an Horizontal Privilige escalation with user A getting access to user B resources.
+To block this attack it is needesd to patch quickly, update anti(virus/malware) software.
+Being provided with Data execution Prevention which makes data being able to run only in executable areas.
+Or having an space layout randomization which prevents a buffer overrun at a known memory address. which makes that each time an app runs the data may be located ina different place.
+
+**Cross-site request**
+A cross-site request can be legit like when you visit a website the browser may load videos from youtube or pictures from instagram.
+But this process doesnt include authentication process. including code in both client server sides.
+Bad guys may take advantage of the trust that a web app has for the user, the web trust the browser so the request are made without any prior consent.
+The web application should have anti-forgery techniques added like a cryptographic token to prevent a forgery.
+
+**Directory traversal**
+Allows to read files from a web server that are outside of the website`s file directory. This may be cause because of bad configuration or an software vulnerability
+
+## 2.4 Cryptographic attacks
+**Birthday attack**
+This is a hash collision, two different plaintext having the same hash. This should not happen in modern Hash algorithms
+
+**Downgrade attack**
+Using a bad encryption will force the systems to downgrade their security
+the **SSL stripping** combines an on-path attack with a downgrade attack, sitting on the middle of the conversation and is able to see the full data, so the page is not encrypted. stripping away the S in HTTPS.
+
+## 2.4 Password Attacks
+Some Application stores passwords in the clear (with no encryption)
+These passwords should be stored as a Hash which represents data as a fixed-length string, with no collision or way to reverse engineer it.
+**Spraying attack** consist in trying the most common passwords in different accounts and if that doesnt work move on eg. 12345, qwerty etc...
+**Brute forece** like a spraying attack but way more broad, but it also takes more time, and has the risk of the account being shut out.
+So the attackers usually run this typr of attack offline, by obtaining the list of users and hashes , calculating a password hash, comparing it to a stored hash.
+All this process requires large computational resources.
+
+
+
+
+
+
 
 
 
