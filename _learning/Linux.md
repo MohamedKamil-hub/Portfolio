@@ -13,19 +13,19 @@ These are my notes from studying Linux terminal and Bash scripting.
 ## Bandit over the wire
 
 <details>
-<summary>Mostrar/Ocultar contenido</summary>
-
-Contenido de la sección...
-
+  <summary>Mostrar/Ocultar contenido</summary>
+  
+  Contenido de la sección...
+  
 </details>
 
 ## Basic Concepts
 
 <details>
-<summary>Mostrar/Ocultar contenido</summary>
-
-Más contenido...
-
+  <summary>Mostrar/Ocultar contenido</summary>
+  
+  Más contenido...
+  
 </details>
 
 <script>
