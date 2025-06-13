@@ -12,47 +12,36 @@ These are my notes from studying Linux terminal and Bash scripting.
 ## Índice
 <div id="toc"></div>
 
-## Bandit over the wire
+<details open>
+<summary><strong>Bandit over the wire</strong></summary>
 
 Contenido de la sección...
 
-## Basic Concepts
+</details>
+
+<details>
+<summary><strong>Basic Concepts</strong></summary>
 
 Más contenido...
+
+</details>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const toc = document.getElementById("toc");
-  const headers = document.querySelectorAll("h2, h3");
+  const summaries = document.querySelectorAll("summary");
 
-  // Crear índice interactivo
+  // Crear índice desde los summarys
   let list = "<ul>";
-  headers.forEach(h => {
-    const id = h.id || h.textContent.toLowerCase()
+  summaries.forEach(s => {
+    const id = s.textContent.toLowerCase()
       .trim()
       .replace(/[^\w]+/g, '-')
       .replace(/^-+|-+$/g, '');
-    h.id = id;
-    list += `<li><a href="#${id}">${h.textContent}</a></li>`;
+    s.parentElement.id = id;
+    list += `<li><a href="#${id}">${s.textContent}</a></li>`;
   });
   list += "</ul>";
   toc.innerHTML = list;
-
-  // Convertir en colapsables automáticamente
-  headers.forEach(h => {
-    const details = document.createElement("details");
-    const summary = document.createElement("summary");
-    summary.textContent = h.textContent;
-    details.appendChild(summary);
-
-    let next = h.nextElementSibling;
-    while (next && !["H2", "H3"].includes(next.tagName)) {
-      const temp = next.nextElementSibling;
-      details.appendChild(next);
-      next = temp;
-    }
-
-    h.replaceWith(details);
-  });
 });
 </script>
