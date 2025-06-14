@@ -783,6 +783,76 @@ These passwords should be stored as a Hash which represents data as a fixed-leng
 So the attackers usually run this typr of attack offline, by obtaining the list of users and hashes , calculating a password hash, comparing it to a stored hash.
 All this process requires large computational resources.
 
+## 2.4 Indicators of Compromise
+Something like :
+- Unusual amount of network activity
+- Changes in a file Hash values
+- Irregular international traffic
+- Changes to DNS data
+- Uncommon login patterns
+
+**Acount lockout**
+Credentials are not working because of exceeded login attemps.
+
+**Concurrent session usage**
+multiple account logins from multiple locations
+
+**Blocked content**
+An attacker wants to stay as long as possible, that's because they usually block things like Auto-updated connections, links to security patches, Anti-malware sites etc...
+
+**Impossible travel**
+If a user logs at first in Australia but a few minutes later logs again from Croatia, it should be something alarming.
+
+**Resource consumption**
+The Hacker will want to transfer all the data to his own, which uses bandwidth. 
+This can be identified with unusual spike
+
+**Resource inaccesibility**
+The server is down, usually as a way to cover the actual exploit.
+
+**Out-of-cycle logging**
+Patch logs occurring outside of the normal patch day
+
+**Missing logs**
+attackers will very often delete their logs to cover the track.
+Logs should be secured and monitored.
+
+**Published data**
+private data appearing publicly
+
+## 2.5 Segmentation and Access Control
+
+**Segmenting the network** can be Physical, logical or virtual. and may have performance, compilance or Security porpuses.
+
+**Access control lists (ACLs)**
+to allow or disallow traffic based on groups, IPs, ports, time, aplications etc...
+to restric access to network devices limited by IP address or other identifier.
+
+**Application allow list / deny list**
+Any application can be dangerous.
+
+To an **Allow list** Nothing runs unless its approved which is very restrictive.
+
+To an **Deny list** Nothing on the bad list can be executed, eg anti-virus anti-malware , everything can run unless its unapproved.
+
+
+## 2.5 Mitigation Techniques
+
+**Patching** any know vulnerabilities, also patch thid-party applications. In large organizations auto-updates are not used because each patch is tested before being applied.
+
+**Encryption** Prevent access to application data files with file level encryption or full disk encryption (FDE)
+
+**Monitoring** using built-in or separate devices like Sensors or Collectors like a SIEM 
+
+**Least Privilige** rights and permission set to bare minimum enough to complete the objective.
+
+**Configuration enforcement** Perform a posture assessment each time a device connects
+
+**Decommissioning** delete all data before decommissioning a storage device
+
+
+
+
 
 
 
