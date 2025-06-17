@@ -851,16 +851,90 @@ To an **Deny list** Nothing on the bad list can be executed, eg anti-virus anti-
 **Decommissioning** delete all data before decommissioning a storage device
 
 
+## 2.5 Hardening techniques
+
+**System hardening** , make a os more secure
+Always apply updates
+Making usre all users have a secure password with limited permissions
+Limit network access
+Anti-virus
+
+**Encryption**
+prevent access to application data files
+by encrypting files system (EFS)
+by encrypting the full disk (FDE)
+by encrypting all network communication via VPN
+
+**Endpoint**
+Malware attacking from the users workplace
+to prevent it it is necessary to secure user application.
+	**Endpoint detection and response EDR)**
+ 	detects threats by signatures, behavior analysis, process monitoring etc... and investigates about the threat and is able to take action by isolating that system.
 
 
+**Host-based firewall**
+software-based firewall
+is Allow or disallow incoming and outcoming application traffic, and identifying and blocking processes to stop malware before it can began running.
+
+**Fiding intruaion**
+Host-based intrusion system (HIPS)
+recognize and block known attacks
+secure OS and applications configs and validates incoming service requests
+
+**Open ports and services**
+every open port is possible entry point
+except required ports all ports should be closed
+You can control access with a firewall 
+Run a scan on nmap to see what ports might be open on your system
+
+**Default password changes**
+change the default configuration.
+
+**Removal of unncessary software**
+all software contains bugs
+instead of managing ongoing updates in every single application it may be better to remove unused software to reduce the risk
+
+  
+## 3.1 Cloud infrastructures
+
+**Hybrid Cloud**
+More than one cloud provider which adds additional complexity.
+this additional confiuration my have mismatches in authentication, firewall and server configuration.
+And different security monitoring.
+
+**Third-party vendors in the cloud**
+having a vendor risk assessments part of an overall vendor risk management policy.
+constant monitoring
+
+**Infrstructure as code**
+define servers, network, and applications as code.
+modify the infrastructure and create versions or build other application instances
+
+**Serverless architecture**
+aplicaions are separated into individual functions removing the operating system from the equation.
+May be event triggered and ephemeral.
+Managed by a third party
+
+**Microservices and APIs**
+big application contains all decision making processes which have large codebase and change control challenges
+instead of that you can use APIs Application Programming interfaces which works with the microservices in order to act as the pplication which is more scalable , resilient and secure.
 
 
+## 3.1 Network Infrastructure concepts
+**Physical isolation**
+devices are physically separated with no opportunity for mixing data
 
+**Logical segmentation with VLANs**
+(virtual logic area netwroks)  separated logically instead of physically
 
+**SDN (Software defined networking)**
+Netwotk devices have 3 functional planes of operation,
 
+Data, process the network frames and packets (network traffic)
+Control, manages the actions of the data plane (dynamic routing protocols)
+Management, configures the device  (SSH,SNMP,API)
 
-
-
+split the functions into separated logical units
 
 
 <script>
