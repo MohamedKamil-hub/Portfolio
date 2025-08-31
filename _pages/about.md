@@ -1,4 +1,3 @@
----
 permalink: /
 title: "About Me"
 author_profile: true
@@ -7,10 +6,10 @@ redirect_from:
   - /about.html
 ---
 
+Hi, I’m Mohamed Kamil — a native Spanish speaker and IT enthusiast focused on networking, microcomputing, and cybersecurity. I’m currently in Year 2 of Vocational Training in Microcomputer Systems and Networks, developing practical skills through labs and hands-on projects.  
 
-Hi, I’m Mohamed Kamil — an IT and cybersecurity enthusiast on a mission to break things (ethically, of course 🔍💻). I document my learning journey here through projects, home labs, and experiments—all while figuring out which corner of cybersecurity I’ll conquer next.
+When I’m not building my technical expertise, I enjoy cycling, practicing judo 🥋, and exploring the world through documentaries, videogames, and time with animals.  
 
-Currently, I’m in Year 2 of Formación Profesional de Grado Medio en Sistemas Microinformáticos y Redes (Vocational Training in Microcomputer Systems & Networks). When I’m not nerding out over firewalls or Python scripts, you’ll find me outdoors: lifting my body (calisthenics), lifting bikes (cycling), or gently lifting opponents (judo 🥋).
+I’m always open to connecting with professionals in networking and cybersecurity, so feel free to reach out!
 
-What’s brewing?
-Building a SIEM lab + honeypot soon! Stay tuned—or better yet, reach out if you love talking networks, security, or judo throws.
+
