@@ -1,3 +1,4 @@
+---
 permalink: /
 title: "About Me"
 author_profile: true
@@ -12,4 +13,5 @@ When I’m not building my technical expertise, I enjoy cycling, practicing judo
 
 I’m always open to connecting with professionals in networking and cybersecurity, so feel free to reach out!
 
-
+📧 Email: your.email@gmail.com  
+📱 Phone: +34 600 123 456
