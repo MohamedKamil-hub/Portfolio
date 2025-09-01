@@ -2,15 +2,13 @@
 title: "Automated Linux Server Hardening Toolkit"
 collection: portfolio
 permalink: /portfolio/automated-linux-server-hardening-toolkit
+date: 2025-09-01
 excerpt: >
   A toolkit that automatically applies CIS-level hardening on Linux servers.
 
   ![Screenshot](/images/500x300.png)
-date: 2025-09-01
-githuburl: 'https://github.com/K4M1LK4/project_1'
+githuburl: "https://github.com/K4M1LK4/project_1"
 ---
-
-
 
 ## Goals
 
@@ -23,8 +21,6 @@ githuburl: 'https://github.com/K4M1LK4/project_1'
 - Bash scripts for quick local runs (idempotent).
 - Ansible role/playbook for production-style automation.
 - Verification script that checks and reports compliance for each rule.
-- Example `README.md`, diagrams, and screenshots for your blog.
-- GitHub Actions workflow: `ansible-lint`, `shellcheck`, run tests.
 
 ## Minimal Requirements
 
