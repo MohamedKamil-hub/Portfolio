@@ -1,8 +1,12 @@
 ---
 title: "Automated Linux Server Hardening Toolkit"
-excerpt: "A toolkit that automatically applies CIS-level hardening on Linux servers.<br/><img src='/images/500x300.png'>"
 collection: portfolio
+permalink: /portfolio/automated-linux-server-hardening-toolkit
+excerpt: 'A toolkit that automatically applies CIS-level hardening on Linux servers.<br/><img src="/images/500x300.png">'
+date: 2025-09-01
+githuburl: 'https://github.com/K4M1LK4/project_1'
 ---
+
 
 ## Goals
 
