@@ -13,23 +13,7 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- Loop through portfolio categories if defined (optional) -->
-{% if site.portfolio_category %}
-  {% for category in site.portfolio_category %}
-    {% assign title_shown = false %}
-    {% for project in site.portfolio reversed %}
-      {% if project.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for project in site.portfolio reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<!-- Loop through all portfolio projects -->
+{% for project in site.portfolio reversed %}
+  {% include archive-single.html %}
+{% endfor %}
