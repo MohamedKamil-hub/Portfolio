@@ -5,7 +5,7 @@ permalink: /portfolio/
 author_profile: true
 ---
 
-{% if site.portfolio %}
+{% if site.portfolio.size > 0 %}
   <p>Here are my projects, experiments, and learning journeys. Click on any project to see details and code.</p>
 {% else %}
   <p>No projects found yet. Check back soon!</p>
@@ -14,6 +14,6 @@ author_profile: true
 {% include base_path %}
 
 <!-- Loop through all portfolio projects -->
-{% for project in site.portfolio reversed %}
+{% for post in site.portfolio reversed %}
   {% include archive-single.html %}
 {% endfor %}
