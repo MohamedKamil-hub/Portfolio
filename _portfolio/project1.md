@@ -7,7 +7,7 @@ excerpt: >
   A toolkit that automatically applies CIS-level hardening on Linux servers.
 
   ![Screenshot](/images/500x300.png)
-githuburl: "https://github.com/K4M1LK4/project_1"
+githuburl: "https://github.com/K4M1LK4/Automated-Linux-Server-Hardening-Toolkit"
 ---
 
 ## Goals
