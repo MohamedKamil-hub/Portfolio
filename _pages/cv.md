@@ -9,49 +9,74 @@ redirect_from:
 
 {% include base_path %}
 
-Contact
-======
-* Email: kouartikamil@gmail.com
-* LinkedIn: [linkedin.com/in/elkouarti](https://www.linkedin.com/in/elkouarti)
-* Portfolio: [k4m1lk4.github.io](https://k4m1lk4.github.io/) / [mohamed_kamil.github.io](https://mohamed_kamil.github.io/)
-* GitHub: [github.com/K4M1LK4](https://github.com/K4M1LK4)
+# Mohamed Kamil El Kouarti  
+**IT Systems & Networks Technician (in training)**  
 
-About Me
-======
-Soy estudiante del Ciclo Formativo de Grado Medio en Sistemas Microinformáticos y Redes (SMR).  
-Autodidacta, resiliente y dedicado, con interés en informática, redes y ciberseguridad.  
-Busco oportunidades remotas en IT que me permitan desarrollar mis habilidades y aportar valor.
+📧 [kouartikamil@gmail.com](mailto:kouartikamil@gmail.com) · 📍 Mechhidan (Toledo)  
+🔗 [Portfolio](#) · [GitHub](#) · [LinkedIn](#)  
 
-Skills
-======
-* **Network & Systems:** Network Topology, OSI Model, Cisco IOS  
-* **Languages:** English (Professional Working), Spanish (Native/Bilingual)
+---
 
-Certifications
-======
-* EF SET English Certificate B2 Upper Intermediate  
-* Mastercard – Cybersecurity Job Simulation  
-* Networking Basics – Cisco NetAcad  
-* Networking Devices and Initial Configuration – Cisco NetAcad  
-* ANZ – Cyber Security Management Job Simulation
+## Professional Summary
+IT Systems and Network Technician in training with hands-on experience through professional internships. Skilled in deploying and maintaining local networks, providing hardware support, and developing scripts to automate system administration and server hardening tasks. Seeking a junior role to contribute problem-solving skills and operational scalability.
 
-Education
-======
-* **thePower** – Grado Medio, Sistemas Microinformáticos y Redes (2024 - 2026)
+---
 
-Experience
-======
-* **Fundación San Bernardo** – Administración de Sistemas y Redes (Prácticas)  
-  * Madrid, España | Marzo 2025 (1 mes)  
-  * Instalación y configuración de equipos en red, mantenimiento preventivo y correctivo de redes locales y periféricos.  
-  * Mejora de habilidades prácticas y adaptación a protocolos técnicos del entorno.
+## Highlights
+- Real-world internship in system administration and network support (Fundación San Bernardo).  
+- Public portfolio with projects focused on security and automation.  
+- Cisco certifications & EF SET B2 English; scripting experience in Bash, PowerShell, and Python.  
+- Strong interest in cybersecurity and infrastructure hardening.  
 
-Projects & Labs
-======
-* Puedes añadir aquí tus **Packet Tracer labs**, simulaciones Forage y CTFs, con breve descripción:  
-  * **Proyecto 1:** Resolución de arranque Windows – diagnóstico, restauración y reinstalación de driver.  
-  * **Proyecto 2:** Topología Packet Tracer – VLANs, DHCP, DNS, prueba de conectividad.  
-  * **Proyecto 3:** Simulación Forage – respuesta a incidente de ciberseguridad (phishing).
+---
+
+## Experience
+**Systems & Network Administration — Fundación San Bernardo (Internship)**  
+*March 2025*  
+- Installed and configured network equipment and perimeter devices in office environments.  
+- Performed preventive and corrective maintenance; repaired peripherals.  
+- Created technical documentation and internal guides; supported end-users alongside the IT team.  
+
+---
+
+## Projects
+**Automated Linux Server Hardening Toolkit**  
+Toolkit to simplify basic Linux server hardening with checklists, verification scripts, and automated tasks (Bash / Python).  
+*Goal: reduce secure setup time and standardize best practices across deployments.*  
+
+**Personal Portfolio (GitHub Pages — Jekyll)**  
+Public site showcasing projects, repositories, and technical documentation (designed for use in technical interviews).  
+
+---
+
+## Education
+**Vocational Training — Microcomputer Systems & Networks**  
+Prometeo by The Power (2024–2026, ongoing)  
+
+---
+
+## Certifications & Courses
+- [Cisco — Networking Devices and Initial Configuration](https://www.netacad.com/courses/networking/networking-devices-and-initial-configuration) (Oct 2024)  
+- [Cisco — Networking Basics](https://www.netacad.com/courses/networking/networking-basics);  
+  [Network Support and Security](https://www.netacad.com/courses/networking/network-support-and-security);  
+  [Network Addressing and Basic Troubleshooting](https://www.netacad.com/courses/networking/network-addressing-and-basic-troubleshooting)  
+- [EF SET — English Certificate B2](https://www.efset.org/cert/) (Jul 2025)  
+- [Forage — Cybersecurity Virtual Experience Programs (AIG, Mastercard, ANZ)](https://www.theforage.com/) (Jul–Aug 2025)  
+- [CCST — Operating Systems Support]([https://www.netacad.com/courses/ccst-operating-systems-support](https://www.credly.com/badges/e56a6777-4ee3-431e-8308-f22abb29547f/linked_in_profile))  
+
+
+---
+
+## Technologies
+Linux · Windows · Bash · PowerShell · Python (basic–intermediate)  
+TCP/IP · IPv4/subnetting · DHCP · DNS · Git · Jekyll  
+Virtualization (VMs) · Wireshark (basic) · Nmap (basic)  
+
+---
+
+## Languages & Soft Skills
+- **Spanish** (native), **English** (B2)  
+- Strong user support, technical documentation, curiosity, and fast learning.  
 
 Publications
 ======
