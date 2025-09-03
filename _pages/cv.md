@@ -12,7 +12,7 @@ redirect_from:
 # Mohamed Kamil El Kouarti  
 **IT Systems & Networks Technician (in training)**  
 
-📧 [kouartikamil@gmail.com](mailto:kouartikamil@gmail.com) · 📍 Mechhidan (Toledo)  
+📧 [kouartikamil@gmail.com](mailto:kouartikamil@gmail.com) · 📍 Toledo (Spain)  
 🔗 [Portfolio](#) · [GitHub](#) · [LinkedIn](#)  
 
 ---
@@ -62,7 +62,7 @@ Prometeo by The Power (2024–2026, ongoing)
   [Network Addressing and Basic Troubleshooting](https://www.netacad.com/courses/networking/network-addressing-and-basic-troubleshooting)  
 - [EF SET — English Certificate B2](https://www.efset.org/cert/) (Jul 2025)  
 - [Forage — Cybersecurity Virtual Experience Programs (AIG, Mastercard, ANZ)](https://www.theforage.com/) (Jul–Aug 2025)  
-- [CCST — Operating Systems Support]([https://www.netacad.com/courses/ccst-operating-systems-support](https://www.credly.com/badges/e56a6777-4ee3-431e-8308-f22abb29547f/linked_in_profile))  
+- [CCST — Operating Systems Support](https://www.credly.com/badges/e56a6777-4ee3-431e-8308-f22abb29547f/linked_in_profile)  
 
 
 ---
