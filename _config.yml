@@ -1,25 +1,24 @@
-locale                   : "en-US"
-site_theme               : "default"
-title                    : "About me"
-title_separator          : "-"
-name                     : &name "Mohamed Kamil El Kouarti"
-description              : &description "portfolio page"
-url                      : "https://k4m1lk4.github.io"
-baseurl                  : "/mohamed_kamil.github.io"  
-repository               : "K4M1LK4/mohamed_kamil.github.io"
+# Basic Site Settings
+locale        : "en-US"
+site_theme    : "default"
+title         : "Portfolio"
+title_separator: "-"
+name          : &name "Mohamed Kamil"
+description   : &description "Student"
+url           : "https://MohamedKamil-hub.github.io"
+baseurl       : "" # keep empty for user site
+repository    : "https://github.com/MohamedKamil-hub/Portfolio"
 
 author:
-  avatar           : "ocho_pfp.png"
-  name             : *name
-  bio              : "Cybersecurity student"
-  location         : "Spain"
-  email            : "kouartimohamedkamil@gmail.com"
-  phone            : "+34 600 123 456"
-  github           : "K4M1LK4"
-  orcid            : "http://orcid.org/0000-0000-0000-0000"  # cámbialo si tienes uno real
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  youtube          : "K4M1LK4"
+  avatar   : "profile.png"
+  name     : "Mohamed Kamil"
+  pronouns : "he/him"
+  bio      : "Student"
+  location : "Toledo, Spain"
+  employer : ""
+  uri      : null
+  email    : "kouartikamil@gmail.com"
+
 
 # Publication Categories
 publication_category:
