@@ -6,7 +6,7 @@ title_separator: "-"
 name          : &name "Mohamed Kamil"
 description   : &description "Student"
 url           : "https://MohamedKamil-hub.github.io"
-baseurl       : "" # keep empty for user site
+baseurl       : "/Portfolio" # keep empty for user site
 repository    : "https://github.com/MohamedKamil-hub/Portfolio"
 
 author:
