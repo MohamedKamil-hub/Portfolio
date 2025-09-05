@@ -13,7 +13,7 @@ redirect_from:
 **IT Systems & Networks Technician (in training)**  
 
 📧 [kouartikamil@gmail.com](mailto:kouartikamil@gmail.com) · 📍 Toledo (Spain)  
-🔗 [Portfolio](#) · [GitHub](#) · [LinkedIn](#)  
+🔗 [Portfolio](https://mohamedkamil-hub.github.io/Portfolio/) · [GitHub](https://github.com/MohamedKamil-hub) · [LinkedIn](https://www.linkedin.com/in/elkouarti/)  
 
 ---
 
