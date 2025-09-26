@@ -51,7 +51,7 @@ Passionate about IT, I explore how things work, break them apart, and rebuild th
 <h2 style="color:#22d3ee;">🤝 Let’s Connect</h2>
 <ul style="color:#cbd5e1; list-style-type:none; padding-left:0; line-height:1.8;">
   <li>🤝 I’m eager to collaborate with <strong>networking</strong>, <strong>cybersecurity</strong>, and <strong>cloud</strong> professionals. Let’s create secure, innovative systems together!</li>
-  <li>🌐 <a href="https://github.com/MohamedKamilElKouarti" style="color:#38bdf8; text-decoration:none;">GitHub</a></li>
+  <li>🌐 <a href="https://github.com/MohamedKamil-hub" style="color:#38bdf8; text-decoration:none;">GitHub</a></li>
   <li>💼 LinkedIn: <em>https://www.linkedin.com/in/elkouarti/</em> 😉</li>
   <li>📧 Email: <em>[kouartikamil@gmail.com]</em></li>
 </ul>
