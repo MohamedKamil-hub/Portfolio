@@ -19,22 +19,10 @@ Passionate about IT, I explore how things work, break them apart, and rebuild th
 <hr style="border: 1px solid #334155; margin: 2rem 0;">
 
 <h2 style="color:#22d3ee;">💻 What I Do</h2>
-<ul style="list-style-type: none; padding: 0; font-size:1.05rem; line-height:1.8;">
-  <li>🔧 Reacondition & repair devices to give them a second life ♻️</li>
-  <li>🛡️ Build and secure Linux environments with automation & hardening</li>
-  <li>🐍 Develop tools and projects with <span style="color:#38bdf8;">Python</span>, <span style="color:#38bdf8;">Bash</span>, and <span style="color:#38bdf8;">Linux</span></li>
-  <li>🎯 Learn both <span style="color:#22d3ee;">offensive (Red Team)</span> and <span style="color:#22d3ee;">defensive (Blue Team)</span> security</li>
-</ul>
+
 
 <h2 style="color:#22d3ee;">📂 Beyond the Terminal</h2>
-<p style="color:#cbd5e1;">My passions fuel my creativity and resilience:</p>
-<ul style="color:#cbd5e1; list-style-type:none; padding-left:0; line-height:1.8;">
-  <li>🚴 <strong>Cycling</strong>: Powering through trails with endurance.</li>
-  <li>🥋 <strong>Judo</strong>: Honing discipline and focus.</li>
-  <li>📺 <strong>Documentaries</strong>: Exploring science, tech, and history.</li>
-  <li>🎮 <strong>Videogames</strong>: Sharpening strategy in virtual worlds.</li>
-  <li>🐾 <strong>Animals</strong>: Finding joy in their companionship.</li>
-</ul>
+
 
 <h2 style="color:#22d3ee;">🚀 Current Focus</h2>
 <ul style="list-style-type: none; padding: 0; font-size:1.05rem; line-height:1.8;">
@@ -52,13 +40,10 @@ Passionate about IT, I explore how things work, break them apart, and rebuild th
 <ul style="color:#cbd5e1; list-style-type:none; padding-left:0; line-height:1.8;">
   <li>🤝 I’m eager to collaborate with <strong>networking</strong>, <strong>cybersecurity</strong>, and <strong>cloud</strong> professionals. Let’s create secure, innovative systems together!</li>
   <li>🌐 <a href="https://github.com/MohamedKamil-hub" style="color:#38bdf8; text-decoration:none;">GitHub</a></li>
-  <li>💼 LinkedIn: <em>https://www.linkedin.com/in/elkouarti/</em> 😉</li>
+  <li>💼 LinkedIn: <em>https://www.linkedin.com/in/elkouarti/</em> </li>
   <li>📧 Email: <em>[kouartikamil@gmail.com]</em></li>
 </ul>
 
-<blockquote style="color:#94a3b8; font-style:italic; border-left:3px solid #38bdf8; padding-left:1rem; margin-top:1rem;">
-“Code with passion, live with purpose.”
-</blockquote>
 
 </div>
 
