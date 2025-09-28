@@ -1,0 +1,28 @@
+.project-card {
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid #334155;
+}
+
+.project-header {
+  background: #38bdf8;   // cyan-400
+  color: #0f172a;        // dark navy text
+  padding: 1rem 1.25rem;
+}
+
+.project-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.project-header p {
+  margin: 0.25rem 0 0 0;
+}
+
+.project-body {
+  background: #1e293b;   // dark section
+  color: #f8fafc;
+  padding: 1rem 1.25rem;
+}
