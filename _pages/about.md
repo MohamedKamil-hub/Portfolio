@@ -75,9 +75,10 @@ I enjoy my free time reading superhero comics, hiking, playing videogames and pr
   </button>
 </form>
 
-<div id="form-notice" style="display:none;position:fixed;top:20px;right:20px;background:#38bdf8;color:#0f172a;padding:1rem;border-radius:0.5rem;box-shadow:0 4px 8px rgba(0,0,0,0.3);z-index:9999;">
+<div id="form-notice" style="display:none; position: fixed; bottom: 20px; right: 20px; background:#38bdf8; color:#0f172a; padding:1rem; border-radius:0.5rem; box-shadow:0 4px 8px rgba(0,0,0,0.3); z-index:9999;">
   ✅ Message sent successfully!
 </div>
+
 
 <script>
 (function() {
