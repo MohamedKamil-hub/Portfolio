@@ -3,28 +3,28 @@
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  background: #1e293b; /* unified dark background matching About Me section */
-  color: #f8fafc;      /* readable text color */
-  padding: 1rem;       /* added padding for consistent spacing inside the card */
+  background: #1e293b; /* unified dark background */
+  color: #f8fafc;
+  padding: 1rem;       /* consistent spacing inside the card */
 }
 
 .project-header,
 .project-body {
   background: #1e293b; /* unified background for header and body */
   color: #f8fafc;
-  /* remove padding here to avoid double spacing */
+  /* no extra padding here to avoid double spacing */
 }
 
 .project-header h2 {
-  margin: 0 0 0.5rem 0; /* spacing below the title */
+  margin: 0 0 0.5rem 0; 
 }
 
 .project-header a,
 .project-description,
 .page__date {
-  color: #f8fafc;       /* readable text and links */
+  color: #f8fafc;
 }
 
 .project-description {
-  margin: 0.5rem 0 0 0; /* spacing above/below description */
+  margin: 0.5rem 0 0 0;
 }
