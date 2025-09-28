@@ -56,7 +56,6 @@ I enjoy my free time reading superhero comics, hiking, playing videogames and pr
 </ul>
 
 <hr style="border: 1px solid #334155; margin: 2rem 0;">
-
 <h2 style="color:#22d3ee;">📩 Send Me a Message</h2>
 
 <form id="contact-form" action="https://formspree.io/f/manpqkze" method="POST">
@@ -83,7 +82,7 @@ I enjoy my free time reading superhero comics, hiking, playing videogames and pr
 
 <script>
 document.getElementById("contact-form").addEventListener("submit", function(e) {
-  e.preventDefault(); // prevent default redirect
+  e.preventDefault(); // prevent redirect
 
   const form = e.target;
   const data = new FormData(form);
