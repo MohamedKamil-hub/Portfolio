@@ -59,24 +59,31 @@ I enjoy my free time reading superhero comics, hiking, playing videogames and pr
 
 <h2 style="color:#22d3ee;">📩 Send Me a Message</h2>
 
-<form action="https://formspree.io/f/manpqkze" method="POST">
-  
+<form id="contact-form" action="https://formspree.io/f/manpqkze" method="POST">
   <input type="text" name="name" placeholder="Your Name" required
          style="background: #1e293b; color: #f8fafc; border: 1px solid #334155; padding: 0.75rem; border-radius: 0.5rem; width: 100%; margin-bottom: 1rem;">
-  
+
   <input type="email" name="email" placeholder="Your Email" required
          style="background: #1e293b; color: #f8fafc; border: 1px solid #334155; padding: 0.75rem; border-radius: 0.5rem; width: 100%; margin-bottom: 1rem;">
-  
+
   <textarea name="message" placeholder="Your Message" required
             style="background: #1e293b; color: #f8fafc; border: 1px solid #334155; padding: 0.75rem; border-radius: 0.5rem; width: 100%; min-height: 150px; margin-bottom: 1rem;"></textarea>
-  
+
+  <input type="hidden" name="_replyto" value="">
+
+  <button type="submit" style="background: #38bdf8; color: #0f172a; padding: 0.75rem; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer;">
+    Send Message
+  </button>
+</form>
+
+<!-- Floating notification -->
 <div id="form-notice" style="display:none; position: fixed; top: 20px; right: 20px; background:#38bdf8; color:#0f172a; padding: 1rem; border-radius: 0.5rem; box-shadow: 0 4px 8px rgba(0,0,0,0.3); z-index: 9999;">
   ✅ Message sent successfully!
 </div>
 
 <script>
 document.getElementById("contact-form").addEventListener("submit", function(e) {
-  e.preventDefault(); // prevent default form submission
+  e.preventDefault(); // prevent default redirect
 
   const form = e.target;
   const data = new FormData(form);
@@ -87,16 +94,17 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
     headers: { 'Accept': 'application/json' }
   }).then(response => {
     if (response.ok) {
-      // show notification
       const notice = document.getElementById("form-notice");
       notice.style.display = "block";
-      setTimeout(() => notice.style.display = "none", 3000); // hide after 3s
-      form.reset(); // reset form fields
+      setTimeout(() => notice.style.display = "none", 3000);
+      form.reset();
     } else {
       alert("Oops! There was a problem submitting your form.");
     }
   }).catch(() => alert("Oops! There was a problem submitting your form."));
 });
+</script>
+
   
 <p style="color:#cbd5e1; font-size:0.9rem; margin-top: 1rem;">.</p>
 
