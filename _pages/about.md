@@ -47,4 +47,17 @@ I learn by tackling real problems—whether optimizing CI/CD pipelines or automa
   <li>📧 Email: <em>[kouartikamil@gmail.com]</em></li>
 </ul>
 
+<hr style="border: 1px solid #334155; margin: 2rem 0;">
+
+<h2 style="color:#22d3ee;">📩 Send Me a Message</h2>
+<form action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 1rem;">
+  <input type="hidden" name="access_key" value="bd4c1fcf-db9b-4890-b0a3-0a156c759146">
+  <input type="text" name="name" placeholder="Your Name" required style="background: #1e293b; color: #f8fafc; border: 1px solid #334155; padding: 0.75rem; border-radius: 0.5rem; font-size: 1rem;">
+  <input type="email" name="email" placeholder="Your Email" required style="background: #1e293b; color: #f8fafc; border: 1px solid #334155; padding: 0.75rem; border-radius: 0.5rem; font-size: 1rem;">
+  <textarea name="message" placeholder="Your Message" required style="background: #1e293b; color: #f8fafc; border: 1px solid #334155; padding: 0.75rem; border-radius: 0.5rem; font-size: 1rem; min-height: 150px;"></textarea>
+  <button type="submit" style="background: #38bdf8; color: #0f172a; padding: 0.75rem; border: none; border-radius: 0.5rem; font-size: 1rem; font-weight: 600; cursor: pointer;">Send Message</button>
+</form>
+
+<p style="color:#cbd5e1; font-size:0.9rem; margin-top: 1rem;">This form is now set up with your access key from Web3Forms.</p>
+
 </div>
