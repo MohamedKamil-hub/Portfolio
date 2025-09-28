@@ -17,20 +17,3 @@ author_profile: true
 {% for post in site.portfolio reversed %}
   {% include archive-single.html %}
 {% endfor %}
-
-<div class="project-card">
-  <div class="project-header">
-    <h2>{{ page.title }}</h2>
-    {% if page.description %}
-      <p>{{ page.description }}</p>
-    {% endif %}
-  </div>
-
-  <div class="project-body">
-    <p><strong>Published:</strong> {{ page.date | date: "%B %d, %Y" }}</p>
-    {{ content }}
-    {% if page.github %}
-      <p><a href="{{ page.github }}" target="_blank">View on GitHub</a></p>
-    {% endif %}
-  </div>
-</div>
