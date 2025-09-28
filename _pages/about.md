@@ -42,7 +42,7 @@ I enjoy my free time reading superhero comics, hiking, playing videogames and pr
 <ul style="color:#cbd5e1; list-style-type:none; padding-left:0; line-height:1.8;">
   <li>Open to collaborating on projects.</li>
 <a href="https://github.com/MohamedKamil-hub">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="25"/> GitHub
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="25" style="filter: invert(1);"/> GitHub
 </a><br>
 
 <a href="https://www.linkedin.com/in/elkouarti">
