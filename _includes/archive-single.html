@@ -25,7 +25,7 @@
     </div>
   {% endif %}
 
-  <!-- Project Header (blue background) -->
+  <!-- Unified Project Block (light-blue background) -->
   <div class="project-header">
     <h2>
       {% if post.link %}
@@ -39,10 +39,7 @@
     {% if post.excerpt %}
       <p class="project-description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
     {% endif %}
-  </div>
 
-  <!-- Project Body (dark background) -->
-  <div class="project-body">
     {% if post.date %}
       <p class="page__date">
         <strong>Published:</strong>
@@ -55,4 +52,3 @@
     {% endif %}
   </div>
 </div>
-
