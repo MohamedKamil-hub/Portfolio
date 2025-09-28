@@ -41,9 +41,17 @@ I enjoy my free time reading superhero comics, hiking, playing videogames and pr
 <h2 style="color:#22d3ee;">Contact Info & Socials</h2>
 <ul style="color:#cbd5e1; list-style-type:none; padding-left:0; line-height:1.8;">
   <li>Open to collaborating on projects.</li>
-- <a href="https://github.com/MohamedKamil-hub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="25"/> GitHub</a>
-- <a href="https://www.linkedin.com/in/elkouarti"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="25"/> LinkedIn</a>
-- <a href="mailto:kouartimohamedkamil@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" width="25"/> Email</a>
+<a href="https://github.com/MohamedKamil-hub">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="25"/> GitHub
+</a><br>
+
+<a href="https://www.linkedin.com/in/elkouarti">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="25"/> LinkedIn
+</a><br>
+
+<a href="mailto:kouartimohamedkamil@gmail.com">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" width="25"/> Email
+</a>
 
 </ul>
 
