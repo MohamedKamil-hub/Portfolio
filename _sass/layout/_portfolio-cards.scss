@@ -3,29 +3,18 @@
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  background: #1e293b; /* matches About Me section */
+  color: #f8fafc;      /* text color for readability */
 }
 
-/* Unified light-blue background for entire card content */
-.project-header {
-  background: #7dd3fc; /* professional light blue */
-  color: #0f172a;      /* dark text for readability */
-  padding: 1rem;
+.project-header,
+.project-body {
+  background: #1e293b; /* unify header and body */
+  color: #f8fafc;
 }
 
-.project-header h2 {
-  margin: 0 0 0.5rem 0;
-}
-
-.project-header a {
-  color: #0f172a;       /* links readable on light blue */
-  text-decoration: none;
-}
-
+.project-header a,
 .project-description,
-.page__date,
-.project-header a {
-  color: #0f172a;
+.page__date {
+  color: #f8fafc;
 }
-
-.project-description {
-  margin: 0.5rem
