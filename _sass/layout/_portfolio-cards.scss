@@ -5,9 +5,10 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
+/* Unified light-blue background for entire card content */
 .project-header {
-  background: #1d4ed8; /* blue */
-  color: #fff;
+  background: #7dd3fc; /* professional light blue */
+  color: #0f172a;      /* dark text for readability */
   padding: 1rem;
 }
 
@@ -16,17 +17,15 @@
 }
 
 .project-header a {
-  color: #fff;
+  color: #0f172a;       /* links readable on light blue */
   text-decoration: none;
 }
 
-.project-description {
-  margin: 0;
-  font-size: 0.95rem;
+.project-description,
+.page__date,
+.project-header a {
+  color: #0f172a;
 }
 
-.project-body {
-  background: #1e293b; /* dark slate */
-  color: #f8fafc;
-  padding: 1rem;
-}
+.project-description {
+  margin: 0.5rem
