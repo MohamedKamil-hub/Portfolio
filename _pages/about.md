@@ -55,53 +55,57 @@ I enjoy my free time reading superhero comics, hiking, playing videogames and pr
 
 </ul>
 
-<hr style="border: 1px solid #334155; margin: 2rem 0;">
 <h2 style="color:#22d3ee;">📩 Send Me a Message</h2>
 
 <form id="contact-form" action="https://formspree.io/f/manpqkze" method="POST">
   <input type="text" name="name" placeholder="Your Name" required
-         style="background: #1e293b; color: #f8fafc; border: 1px solid #334155; padding: 0.75rem; border-radius: 0.5rem; width: 100%; margin-bottom: 1rem;">
+         style="background:#1e293b;color:#f8fafc;border:1px solid #334155;padding:0.75rem;border-radius:0.5rem;width:100%;margin-bottom:1rem;">
 
   <input type="email" name="email" placeholder="Your Email" required
-         style="background: #1e293b; color: #f8fafc; border: 1px solid #334155; padding: 0.75rem; border-radius: 0.5rem; width: 100%; margin-bottom: 1rem;">
+         style="background:#1e293b;color:#f8fafc;border:1px solid #334155;padding:0.75rem;border-radius:0.5rem;width:100%;margin-bottom:1rem;">
 
   <textarea name="message" placeholder="Your Message" required
-            style="background: #1e293b; color: #f8fafc; border: 1px solid #334155; padding: 0.75rem; border-radius: 0.5rem; width: 100%; min-height: 150px; margin-bottom: 1rem;"></textarea>
+            style="background:#1e293b;color:#f8fafc;border:1px solid #334155;padding:0.75rem;border-radius:0.5rem;width:100%;min-height:150px;margin-bottom:1rem;"></textarea>
 
   <input type="hidden" name="_replyto" value="">
+  <input type="hidden" name="_subject" value="New submission from Portfolio">
 
-  <button type="submit" style="background: #38bdf8; color: #0f172a; padding: 0.75rem; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer;">
+  <button type="submit" style="background:#38bdf8;color:#0f172a;padding:0.75rem;border:none;border-radius:0.5rem;font-weight:600;cursor:pointer;">
     Send Message
   </button>
 </form>
 
-<!-- Floating notification -->
-<div id="form-notice" style="display:none; position: fixed; top: 20px; right: 20px; background:#38bdf8; color:#0f172a; padding: 1rem; border-radius: 0.5rem; box-shadow: 0 4px 8px rgba(0,0,0,0.3); z-index: 9999;">
+<div id="form-notice" style="display:none;position:fixed;top:20px;right:20px;background:#38bdf8;color:#0f172a;padding:1rem;border-radius:0.5rem;box-shadow:0 4px 8px rgba(0,0,0,0.3);z-index:9999;">
   ✅ Message sent successfully!
 </div>
 
 <script>
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-  e.preventDefault(); // prevent redirect
+(function() {
+  const form = document.getElementById("contact-form");
+  const notice = document.getElementById("form-notice");
 
-  const form = e.target;
-  const data = new FormData(form);
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
 
-  fetch(form.action, {
-    method: form.method,
-    body: data,
-    headers: { 'Accept': 'application/json' }
-  }).then(response => {
-    if (response.ok) {
-      const notice = document.getElementById("form-notice");
-      notice.style.display = "block";
-      setTimeout(() => notice.style.display = "none", 3000);
-      form.reset();
-    } else {
-      alert("Oops! There was a problem submitting your form.");
-    }
-  }).catch(() => alert("Oops! There was a problem submitting your form."));
-});
+    const data = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: data,
+      headers: { "Accept": "application/json" }
+    })
+    .then(response => {
+      if (response.ok) {
+        notice.style.display = "block";
+        setTimeout(() => notice.style.display = "none", 3000);
+        form.reset();
+      } else {
+        response.json().then(r => alert(r.error || "Oops! There was a problem."));
+      }
+    })
+    .catch(() => alert("Oops! There was a problem submitting your form."));
+  });
+})();
 </script>
 
   
