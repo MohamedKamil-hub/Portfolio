@@ -5,13 +5,14 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
   background: #1e293b; /* unified dark background matching About Me section */
   color: #f8fafc;      /* readable text color */
+  padding: 1rem;       /* added padding for consistent spacing inside the card */
 }
 
 .project-header,
 .project-body {
   background: #1e293b; /* unified background for header and body */
   color: #f8fafc;
-  padding: 1rem;       /* ADD padding to create space inside the box */
+  /* remove padding here to avoid double spacing */
 }
 
 .project-header h2 {
