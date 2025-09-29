@@ -1,0 +1,43 @@
+name: Deploy Jekyll Site
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "_config.yml"
+      - "index.md"
+      - "_posts/**"
+      - "_layouts/**"
+      - "_includes/**"
+      - "assets/**"
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.2
+
+    - name: Install dependencies
+      run: |
+        gem install bundler
+        bundle install
+
+    - name: Build Jekyll site
+      run: bundle exec jekyll build -d ./_site
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v6
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
+        destination_branch: gh-pages  # optional: branch to publish
+        user_name: "GitHub Actions"
+        user_email: "github-actions[bot]@users.noreply.github.com"
