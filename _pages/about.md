@@ -9,7 +9,7 @@ redirect_from:
 
 <div style="background: linear-gradient(135deg, #0f172a, #1e293b); color: #f8fafc; padding: 2rem; border-radius: 1rem; box-shadow: 0 8px 20px rgba(0,0,0,0.5); font-family: 'Segoe UI', sans-serif;">
 
-<h1 style="color:#38bdf8; font-size:2.5rem; font-weight:700; text-align:center;">👋 Hi, I’m Mohamed Kamil El Kouarti</h1>
+<h1 style="color:#38bdf8; font-size:2.5rem; font-weight:700; text-align:center;">👋 Hi, I’m Mohamed Kamil</h1>
 
 <p style="font-size:1.2rem; line-height:1.8; text-align:center; color:#cbd5e1;">
 I’m an IT student from Spain, focused on building reliable systems through hands-on projects.
