@@ -1,7 +1,7 @@
 # Basic Site Settings
 locale        : "en-US"
 site_theme    : "default"
-title         : "Mohamed Kamil El Kouarti"
+title         : "About me"
 title_separator: "-"
 name          : &name "Mohamed Kamil"
 description   : &description "IT Student"
