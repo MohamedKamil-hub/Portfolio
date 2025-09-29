@@ -1,10 +1,10 @@
 # Basic Site Settings
 locale        : "en-US"
 site_theme    : "default"
-title         : "About me"
+title         : "Mohamed Kamil El Kouarti"
 title_separator: "-"
 name          : &name "Mohamed Kamil"
-description   : &description "Student"
+description   : &description "IT Student"
 url           : "https://MohamedKamil-hub.github.io"
 baseurl       : "/Portfolio" # keep empty for user site
 repository    : "https://github.com/MohamedKamil-hub/Portfolio"
