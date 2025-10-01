@@ -31,7 +31,7 @@ Then i created color variables that i will use afterwards so the output has bett
         WHITE='\033[1;37m'
         NC='\033[0m'
 
-I created the variable to  get the used memory with free -m to get it on megabytes and then i added a pipe | so i can filter the output of that command with awk the NR==2 to get to the second line, and then i sued {print $2} to get the second column i will be using the same method in the following to get the other stats.
+I created the variable to  get the used memory with free -m to get it on megabytes and then i added a pipe so i can filter the output of that command with awk the NR==2 to get to the second line, and then i sued {print $2} to get the second column i will be using the same method in the following to get the other stats.
 
     #MEMORY USAGE
     used=$(free -m | awk 'NR==2 { print $3 }')
@@ -49,16 +49,25 @@ and lastly specified the column with $number and the number on that column will 
     percentage=$(df -h / | awk 'NR==2 {print $5}')
     total_disk=$(LC_NUMERIC=C df -B1 / | awk 'NR==2 {printf "%.2f", $2/1024/1024/1024}')
 
-#TOTAL CPU USAGE 
-total_cpu=$(top -b -n1 | awk '/%Cpu/ {for(i=1;i<=NF;i++) if($i=="id,") {printf "%.2f", 100 - $(i-1)}}')
+To get the cu usage i used the top -b -1  to get an static output
+then i used '/%Cpu/ to get the line containing %Cpu
+for(i=1;<=NF;i++) i=1 means current position and examines  each word in the Cpu line in search of , until the last character i<==N and i++ moves onto the next word in loop
+if the $i (current word) equals the word id then print formated (put 2 decimals with a . ) and then 100 -$(i-1) to get the percentage
 
-top_5_cpu=$(ps aux --sort=-%cpu | awk 'NR>1 && NR<=6 {print $2, $3, $11}')
+    # CPU USAGE 
+    total_cpu=$(top -b -n1 | awk '/%Cpu/ {for(i=1;i<=NF;i++) if($i=="id,") {printf "%.2f", 100 - $(i-1)}}')
 
-top_5_mem=$(ps aux --sort=-%mem | awk 'NR>1 && NR<=6 {print $2, $4, $11}')  
+To get the top 5 cpu and top 5 memory i used the ps aux to get the processes and added --sort=-%cpu to get them ordered from highest to lowest with the '-'  then print th 2 3 11 columns to get their PID, CPU USAGE and NAME
+    
+    top_5_cpu=$(ps aux --sort=-%cpu | awk 'NR>1 && NR<=6 {print $2, $3, $11}')
+    
+    top_5_mem=$(ps aux --sort=-%mem | awk 'NR>1 && NR<=6 {print $2, $4, $11}')  
 
-##os name and version
-os_name=$(cat /etc/os-release | grep '^NAME=' | sed 's/^NAME=//' | tr -d '"')
-os_version=$(cat /etc/os-release | grep '^VERSION=' | sed 's/^VERSION=//' | tr -d '"')
+To get the OS name and version
+
+    ##os name and version
+    os_name=$(cat /etc/os-release | grep '^NAME=' | sed 's/^NAME=//' | tr -d '"')
+    os_version=$(cat /etc/os-release | grep '^VERSION=' | sed 's/^VERSION=//' | tr -d '"')
 
 uptime=$(uptime -p)
 
