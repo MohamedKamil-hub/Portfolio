@@ -96,8 +96,7 @@ and the sed part is to remove all the spaces at the beginning so it's by swaping
 
     load_average=$(uptime | awk -F'load average:' '{print $2}' | sed 's/^ *//')  
 
-    failed_logs_j=$(log_files="/var/log/secure /var/log/auth.log /var/log/messages /var/log/syslog"
-
+    
 To get the failed logs i did  the next:
 check each file in $log_files,
 if  $log is a file and exists then
@@ -105,14 +104,18 @@ the grep is to search thourght log, the -i is to not differentiate between upper
 2>/dev/null redirects any error message (which is stderr and has the code 2) to /dev/null , a sort of trash
 if $log has not files it prints the content
 
+    log_files="/var/log/secure /var/log/auth.log /var/log/messages /var/log/syslog"
     
+    failed_logs_j=$(
     for log in $log_files; do
         if [ -f "$log" ]; then
             grep -i "pam_unix.*fail" "$log" 2>/dev/null | head -5
         else
             echo "file not found: $log"
         fi
-    done) 
+    done
+    )
+
     
 To get the memory usage to put a percentage i used awk BEGIN which is useful to do mathematical operations with AWK
 printf is to formatted print to get 2 decimals and finally to get the percentage it divides the used memory with the total and multiplies it with 100 to get percentage.
