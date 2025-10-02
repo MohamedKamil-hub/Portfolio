@@ -4,7 +4,8 @@ collection: portfolio
 permalink: /portfolio/personalized-greeting-docker
 date: 2025-09-01
 excerpt: >
-  Built a customizable Docker image using Alpine Linux that prints a personalized greeting (e.g., "Hello, [Your Name]!") to the console. This project highlights my ability to use Docker ARG and CMD instructions to pass runtime arguments, create flexible containerized applications, and optimize images for simplicity and efficiency.
+  Built a customizable Docker image using Alpine Linux that prints a personalized greeting (e.g., "Hello, [Your Name]!") to the console. This project highlights my ability to use Docker ARG and CMD instructions to pass runtime arguments,·· 
+  create flexible containerized applications, and optimize images for simplicity and efficiency.
 
 githuburl: 'https://github.com/MohamedKamil-hub/docker-greeting-app'
 ---
@@ -14,9 +15,9 @@ The first thing was to import the distro i will use to do this simple project, i
 
     FROM alpine:latest
 
-And then i add CMD so the command initiates automatically when started, so i dont have to echo manually
-"sh" is used to run the following command in a shell
-"-c" is to tell the shell to run it as a command
+And then i add CMD so the command initiates automatically when started, so i dont have to echo manually··
+"sh" is used to run the following command in a shell··
+"-c" is to tell the shell to run it as a command··
 the NAME has a custom value (we will assign the value later on) but :- indicates World as the default value if nothing else inputted
 
     
