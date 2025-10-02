@@ -10,13 +10,13 @@ githuburl: 'https://github.com/MohamedKamil-hub/docker-greeting-app'
 ---
 Here i showcase and explain the process to make this project to see only the file check the [Github repo](https://github.com/MohamedKamil-hub/docker-greeting-app)
 
-The first thing was to importt the distro i will use to do this simple project, i used Alpine linux because ists pretty lightweight.
+The first thing was to import the distro i will use to do this simple project, i used Alpine linux because it's pretty lightweight.
 
     FROM alpine:latest
 
-And then i add CMD so the command initiates automatically when started, so idont have to echo manually
-"sh" is used to summon a shell to take arguments
-"-c" is to tell the shell that is gonna receive arguments
+And then i add CMD so the command initiates automatically when started, so i dont have to echo manually
+"sh" is used to run the following command in a shell
+"-c" is to tell the shell to run it as a command
 the NAME has a custom value (we will assign the value later on) but :- indicates World as the default value if nothing else inputted
 
     
