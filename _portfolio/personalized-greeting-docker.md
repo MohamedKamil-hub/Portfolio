@@ -15,9 +15,9 @@ The first thing was to importt the distro i will use to do this simple project, 
     FROM alpine:latest
 
 And then i add CMD so the command initiates automatically when started, so idont have to echo manually
-sh is used to summon a shell to take arguments
+"sh" is used to summon a shell to take arguments
 "-c" is to tell the shell that is gonna receive arguments
-the first argument 1 which has custom value but :- indicates World as the default value if nothing else inputted
-And "--" tells linux to take everything that follows as $1 $2...
+the NAME has a custom value (we will assign the value later on) but :- indicates World as the default value if nothing else inputted
+
     
-    CMD  [ "sh", "-c", "echo Hello, ${1:-World}!", "--" ]
+    CMD ["sh", "-c", "echo Hello, ${NAME:-World}!"]
