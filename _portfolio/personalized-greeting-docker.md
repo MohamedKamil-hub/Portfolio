@@ -18,5 +18,6 @@ And then i add CMD so the command initiates automatically when started, so idont
 sh is used to summon a shell to take arguments
 "-c" is to tell the shell that is gonna receive arguments
 the first argument 1 which has custom value but :- indicates World as the default value if nothing else inputted
-
-    CMD echo "sh", "-c", "Hello, ${1:-World}!"
+And "--" tells linux to take everything that follows as $1 $2...
+    
+    CMD  [ "sh", "-c", "echo Hello, ${1:-World}!", "--" ]
