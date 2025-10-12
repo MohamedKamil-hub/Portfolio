@@ -1,22 +1,12 @@
 ---
 title: "static site server"
 collection: portfolio
-permalink: /portfolio/log-archive-tool
+permalink: /portfolio/static-site-server
 excerpt: >
-  built a CLI tool to archive logs with date and time stamps
+  
 
-githuburl: 'https://github.com/MohamedKamil-hub/log-archive-tool'
+githuburl: 'https://github.com/MohamedKamil-hub/gh-deployment-workflow'
 ---
-
-# Static Site Server — Complete Documentation
-
-**Author:** Mohamed Kamil El Kouarti
-**Project:** Serve a static site on Ubuntu Server (VirtualBox) with Nginx + deployment using `rsync`.
-**Server IP (VM):** `192.168.1.148`
-**User on VM:** `user`
-
----
-
 ## Summary
 
 This document includes the complete steps followed to complete the *Static Site Server* project: creation and configuration of a Linux server (Ubuntu Server in VirtualBox), SSH connection, installation and configuration of **Nginx** to serve a static site, deployment with **rsync** from the host machine, and troubleshooting of errors encountered. It includes commands, configuration files, and a troubleshooting section with the actual outputs used as evidence.
