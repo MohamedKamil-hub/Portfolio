@@ -1,21 +1,3 @@
----
-layout: compress
----
-
-{% include base_path %}
-
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
     {{ content }}
 
     <div class="page__footer">
@@ -25,7 +7,23 @@ layout: compress
       </footer>
     </div>
 
-    {% include scripts.html %}
+    <!-- 🌍 Google Translate -->
+    <div id="google_translate_element"
+         style="position: fixed; bottom: 15px; right: 15px; z-index: 9999;">
+    </div>
 
-  </body>
-</html>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en', // idioma original de tu web
+          includedLanguages: 'en,es', // idiomas que permites
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+      }
+    </script>
+
+    <script type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+
+    {% include scripts.html %}
