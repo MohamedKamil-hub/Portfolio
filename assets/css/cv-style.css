@@ -255,4 +255,411 @@ details {
   padding-left: 10px;
 }
 
+
+/* CV Template Styles */
+.cv-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #0a0f1c; /* Fondo oscuro para contraste */
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* Header Styles */
+.cv-header {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #1e293b;
+  padding-bottom: 1.5rem;
+  background-color: #121b2e;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.cv-header h1 {
+  margin-bottom: 0.5rem;
+  color: #22d3ee !important; /* Cyan brillante */
+  font-size: 2.2rem;
+}
+
+.cv-contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cv-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #cbd5e1; /* Texto gris claro */
+}
+
+.cv-profiles {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.cv-profile-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cv-profile-item a {
+  color: #22d3ee !important; /* Cyan para enlaces */
+  text-decoration: none;
+}
+
+.cv-profile-item a:hover {
+  text-decoration: underline;
+  color: #67e8f9 !important; /* Cyan más claro al hover */
+}
+
+.cv-header p {
+  color: #cbd5e1 !important; /* Texto gris claro */
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Section Styles */
+.cv-section {
+  margin-bottom: 2rem;
+  background-color: #121b2e; /* Fondo azul oscuro */
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #22d3ee; /* Borde izquierdo cyan */
+}
+
+.cv-section h2 {
+  border-bottom: 1px solid #1e293b; /* Borde más suave */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #22d3ee !important; /* Cyan para títulos */
+  font-size: 1.5rem;
+}
+
+.cv-section h2 i {
+  color: #22d3ee !important; /* Cyan para iconos */
+}
+
+/* Item Styles */
+.cv-item {
+  margin-bottom: 1.5rem;
+  padding: 1.2rem;
+  background-color: #1a2332; /* Fondo ligeramente más claro para items */
+  border-radius: 6px;
+  border: 1px solid #1e293b;
+}
+
+.cv-item:last-child {
+  margin-bottom: 0;
+}
+
+.cv-item-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cv-item-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #22d3ee !important; /* Cyan para títulos de items */
+}
+
+.cv-item-date {
+  color: #94a3b8; /* Gris más claro para fechas */
+  font-size: 0.9rem;
+}
+
+.cv-item-subtitle {
+  color: #94a3b8; /* Gris para subtítulos */
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.cv-item-summary {
+  margin-bottom: 0.8rem;
+  color: #cbd5e1 !important; /* Texto gris claro */
+}
+
+.cv-item-highlights {
+  margin-top: 0.8rem;
+  padding-left: 1.5rem;
+}
+
+.cv-item-highlights li {
+  margin-bottom: 0.4rem;
+  color: #cbd5e1 !important; /* Texto gris claro */
+}
+
+.cv-item-courses ul {
+  margin-top: 0.25rem;
+  padding-left: 1.5rem;
+}
+
+.cv-item-courses li {
+  margin-bottom: 0.25rem;
+  color: #cbd5e1 !important; /* Texto gris claro */
+}
+
+/* Skills Styles */
+.cv-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.cv-skill-category {
+  background-color: #1a2332; /* Mismo fondo que items */
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #1e293b;
+}
+
+.cv-skill-category h3 {
+  margin-bottom: 0.8rem;
+  color: #22d3ee !important; /* Cyan para títulos de categorías */
+  font-size: 1.1rem;
+}
+
+.cv-skill-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.cv-skill-keyword {
+  background-color: #1e293b; /* Fondo oscuro para etiquetas */
+  color: #cbd5e1 !important; /* Texto gris claro */
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px; /* Más redondeado */
+  font-size: 0.85rem;
+  border: 1px solid #334155;
+}
+
+/* Project Styles */
+.cv-project-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.cv-project-keyword {
+  background-color: #0f172a; /* Fondo más oscuro */
+  color: #22d3ee !important; /* Cyan para texto */
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: 1px solid #22d3ee; /* Borde cyan */
+}
+
+/* Languages Styles */
+.cv-languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.cv-language {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a2332;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #1e293b;
+  min-width: 150px;
+}
+
+.cv-language-name {
+  font-weight: bold;
+  color: #22d3ee !important; /* Cyan para nombres de idiomas */
+}
+
+.cv-language-fluency {
+  color: #94a3b8; /* Gris para nivel */
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+/* Interests Styles */
+.cv-interests {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.cv-interest h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.cv-interest-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.cv-interest-keyword {
+  background-color: #f9f9f9;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* References Styles */
+.cv-references {
+  font-style: italic;
+  color: #94a3b8 !important; /* Gris para referencias */
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #1e293b;
+  text-align: center;
+  background-color: #121b2e;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* Estilos para secciones colapsables con <details> y <summary> */
+details > summary {
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding: 8px 12px;
+  background-color: #1a2332; /* Fondo oscuro */
+  border-radius: 6px;
+  color: #22d3ee !important; /* Cyan para resumen */
+  border: 1px solid #1e293b;
+  transition: all 0.3s ease;
+}
+
+details > summary:hover {
+  background-color: #1e293b;
+}
+
+details[open] > summary {
+  color: #67e8f9 !important; /* Cyan más claro cuando está abierto */
+  background-color: #1e293b;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 1px solid #22d3ee;
+}
+
+details {
+  margin-bottom: 15px;
+  padding-left: 0;
+  background-color: #1a2332;
+  border-radius: 6px;
+  border: 1px solid #1e293b;
+  overflow: hidden;
+}
+
+details[open] {
+  border-color: #22d3ee;
+}
+
+details > div,
+details > ul {
+  padding: 12px;
+  margin: 0;
+  color: #cbd5e1 !important; /* Texto gris claro */
+}
+
+details ul {
+  padding-left: 1.5rem;
+}
+
+/* Estilos generales para texto */
+.cv-container p,
+.cv-container li,
+.cv-container span:not(.cv-item-title):not(.cv-language-name):not(.cv-project-keyword):not(.cv-skill-keyword) {
+  color: #cbd5e1 !important; /* Texto gris claro por defecto */
+}
+
+/* Estilos para enlaces dentro del CV */
+.cv-container a {
+  color: #22d3ee !important;
+  text-decoration: none;
+}
+
+.cv-container a:hover {
+  color: #67e8f9 !important;
+  text-decoration: underline;
+}
+
+/* Print Styles */
+@media print {
+  .cv-container {
+    max-width: 100%;
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  .cv-container * {
+    color: black !important;
+    background-color: transparent !important;
+  }
+  
+  .cv-header {
+    border-bottom-color: #ccc;
+  }
+  
+  .cv-section h2 {
+    border-bottom-color: #ccc;
+  }
+  
+  .cv-skill-keyword,
+  .cv-project-keyword,
+  .cv-interest-keyword {
+    border: 1px solid #ccc;
+    background-color: transparent !important;
+  }
+  
+  .cv-section,
+  .cv-item,
+  .cv-skill-category,
+  .cv-language {
+    border: 1px solid #ddd !important;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cv-container {
+    padding: 1rem;
+  }
+  
+  .cv-item-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .cv-skills {
+    grid-template-columns: 1fr;
+  }
+  
+  .cv-languages {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .cv-language {
+    min-width: auto;
+  }
+  
+  .cv-contact-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
 <link rel="stylesheet" href="/assets/css/cv-style.css">
