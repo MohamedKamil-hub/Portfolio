@@ -6,6 +6,18 @@ excerpt: >
   a simple router level ad bloquer
 githuburl: 'https://github.com/MohamedKamil-hub/network-ad-blocker'
 ---
-
-Here i have my notes, errors and thought process it's just the notes i took in order to acomplish this project, what i wanted to do is a script that gives metrics on CPU, disk, memory, processes and also useful info like failed logs and users logged in to see the script itself check [The Github repo](https://github.com/MohamedKamil-hub/Server-Performance-Stats)
+ [The Github repo](https://github.com/MohamedKamil-hub/network-ad-blocker)
  
+# network-ad-blocker
+dns sinkhole adblocker
+# PureBash Network-Wide Ad Blocker (No Python)
+
+A fast, dependency-free, network-wide ad & tracker blocker using only native Linux tools (dnsmasq + bash).
+
+- Zero Python, Node.js, or heavy dependencies
+- < 50 KB memory usage
+- Blocks 500,000+ domains out of the box
+- Can be set up on any Linux device (Raspberry Pi, VPS, router with OpenWrt, etc.)
+
+Perfect drop-in replacement for Pi-hole when you want something lighter and more "Linux-native".
+
