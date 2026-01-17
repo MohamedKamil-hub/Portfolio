@@ -5,53 +5,68 @@
     <h4 class="page__share-title">{{ site.data.ui-text[site.locale].share_on_label | default: "Share on" }}</h4>
   {% endif %}
 
-  <!-- LinkedIn -->
   <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ base_path }}{{ page.url }}" class="btn btn--linkedin" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn">
     <i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
   </a>
 
-  <!-- X / Twitter -->
   <a href="https://x.com/intent/post?text={{ base_path }}{{ page.url }}" class="btn btn--x" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} X">
-    <i class="fab fa-x-twitter" aria-hidden="true"></i><span> (formerly Twitter)</span>
+    <i class="fab fa-x-twitter" aria-hidden="true"></i><span> X</span>
   </a>
 
-  <!-- Copiar al portapapeles -->
-  <button class="btn btn--clipboard" id="copyBtn" title="Copy link to clipboard">
-    <i class="fas fa-clipboard" aria-hidden="true"></i><span> Copy Link</span>
+  <button class="btn btn--clipboard" id="copyBtn" title="Copy link to clipboard" onclick="copyLink()">
+    <i class="fas fa-link" aria-hidden="true"></i><span id="copyBtnText"> Copy Link</span>
   </button>
 </section>
 
 <script>
-const copyBtn = document.getElementById('copyBtn');
-
 function copyLink() {
-  navigator.clipboard.writeText(window.location.href)
-    .then(() => {
-      // Animación: cambiar texto e icono temporalmente
-      const originalHTML = copyBtn.innerHTML;
-      copyBtn.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i><span> Copied!</span>';
-      copyBtn.classList.add('copied'); // para posibles animaciones CSS
+  const copyBtn = document.getElementById('copyBtn');
+  const btnText = document.getElementById('copyBtnText');
+  const icon = copyBtn.querySelector('i');
+  
+  // Usamos el enlace completo de la página
+  const urlToCopy = window.location.href;
 
-      setTimeout(() => {
-        copyBtn.innerHTML = originalHTML;
-        copyBtn.classList.remove('copied');
-      }, 1500); // 1.5 segundos
-    })
-    .catch(err => {
-      console.error('Failed to copy link: ', err);
-    });
+  navigator.clipboard.writeText(urlToCopy).then(() => {
+    // Guardar estado original
+    const originalText = btnText.innerText;
+    const originalIconClass = icon.className;
+
+    // Aplicar cambios visuales
+    btnText.innerText = " Copied!";
+    icon.className = "fas fa-check"; // Cambia el icono a un check
+    copyBtn.classList.add('copied');
+
+    // Revertir después de 1.5 segundos
+    setTimeout(() => {
+      btnText.innerText = originalText;
+      icon.className = originalIconClass;
+      copyBtn.classList.remove('copied');
+    }, 1500);
+  }).catch(err => {
+    console.error('Error al copiar: ', err);
+  });
 }
 </script>
 
 <style>
-/* Animación simple de transición */
+/* Estilos para la animación */
 .btn--clipboard {
-  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
 }
 
 .btn--clipboard.copied {
-  background-color: #4caf50;
-  color: white;
-  transform: scale(1.1);
+  background-color: #28a745 !important; /* Verde éxito */
+  color: white !important;
+  transform: scale(1.05);
+}
+
+/* Efecto opcional de "pulse" al hacer click */
+.btn--clipboard:active {
+  transform: scale(0.95);
 }
 </style>
