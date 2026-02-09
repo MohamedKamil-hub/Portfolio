@@ -1,361 +1,305 @@
-/* CV Template Styles */
-.cv-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
-  line-height: 1.6;
+/* ====================================
+   MODERN CV TEMPLATE - ENHANCED STYLES
+   ==================================== */
+
+/* CSS Variables for Easy Theming */
+:root {
+  --bg-primary: #0a0f1c;
+  --bg-secondary: #121b2e;
+  --bg-tertiary: #1a2332;
+  --bg-accent: #0f172a;
+  
+  --text-primary: #e2e8f0;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  
+  --accent-cyan: #22d3ee;
+  --accent-cyan-light: #67e8f9;
+  --accent-cyan-dark: #0891b2;
+  
+  --border-subtle: #1e293b;
+  --border-accent: #334155;
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 20px rgba(34, 211, 238, 0.15);
+  
+  --gradient-accent: linear-gradient(135deg, #22d3ee 0%, #0891b2 100%);
+  --gradient-bg: linear-gradient(135deg, #0a0f1c 0%, #1a2332 100%);
 }
 
-/* Header Styles */
+/* Global Resets and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CV Container */
+.cv-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  background: var(--gradient-bg);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background pattern */
+.cv-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(34, 211, 238, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(34, 211, 238, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cv-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ====================================
+   HEADER STYLES
+   ==================================== */
+
 .cv-header {
-  margin-bottom: 2rem;
-  border-bottom: 2px solid #f2f2f2;
-  padding-bottom: 1rem;
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-subtle);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.cv-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-accent);
+  opacity: 0.8;
+}
+
+.cv-header:hover {
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+  transform: translateY(-2px);
 }
 
 .cv-header h1 {
-  margin-bottom: 0.5rem;
-  color: #2a7ae2;
+  margin-bottom: 0.75rem;
+  color: var(--accent-cyan) !important;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeInDown 0.6s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .cv-contact-info {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  animation: fadeIn 0.8s ease-out 0.2s both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .cv-contact-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
 }
 
-.cv-profiles {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
+.cv-contact-item:hover {
+  color: var(--accent-cyan-light);
 }
 
-.cv-profile-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.cv-profile-item a {
-  color: #2a7ae2;
-  text-decoration: none;
-}
-
-.cv-profile-item a:hover {
-  text-decoration: underline;
-}
-
-/* Section Styles */
-.cv-section {
-  margin-bottom: 2rem;
-}
-
-.cv-section h2 {
-  border-bottom: 1px solid #f2f2f2;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #2a7ae2;
-}
-
-.cv-section h2 i {
-  color: #666;
-}
-
-/* Item Styles */
-.cv-item {
-  margin-bottom: 1.5rem;
-}
-
-.cv-item-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
-}
-
-.cv-item-title {
-  font-weight: bold;
+.cv-contact-item i {
+  color: var(--accent-cyan);
   font-size: 1.1rem;
 }
 
-.cv-item-date {
-  color: #666;
-}
-
-.cv-item-subtitle {
-  color: #666;
-  margin-bottom: 0.5rem;
-}
-
-.cv-item-summary {
-  margin-bottom: 0.5rem;
-}
-
-.cv-item-highlights {
-  margin-top: 0.5rem;
-  padding-left: 1.5rem;
-}
-
-.cv-item-highlights li {
-  margin-bottom: 0.25rem;
-}
-
-.cv-item-courses ul {
-  margin-top: 0.25rem;
-  padding-left: 1.5rem;
-}
-
-.cv-item-courses li {
-  margin-bottom: 0.25rem;
-}
-
-/* Skills Styles */
-.cv-skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-.cv-skill-category h3 {
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.cv-skill-keywords {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.cv-skill-keyword {
-  background-color: #f2f2f2;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-
-/* Project Styles */
-.cv-project-keywords {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.cv-project-keyword {
-  background-color: #e6f3ff;
-  color: #2a7ae2;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-
-/* Languages Styles */
-.cv-languages {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.cv-language {
-  display: flex;
-  flex-direction: column;
-}
-
-.cv-language-name {
-  font-weight: bold;
-}
-
-.cv-language-fluency {
-  color: #666;
-  font-size: 0.9rem;
-}
-
-/* Interests Styles */
-.cv-interests {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-.cv-interest h3 {
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.cv-interest-keywords {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.cv-interest-keyword {
-  background-color: #f9f9f9;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-
-/* References Styles */
-.cv-references {
-  font-style: italic;
-  color: #666;
-}
-
-/* Print Styles */
-@media print {
-  .cv-container {
-    max-width: 100%;
-  }
-  
-  .cv-header {
-    border-bottom-color: #ccc;
-  }
-  
-  .cv-section h2 {
-    border-bottom-color: #ccc;
-  }
-  
-  .cv-skill-keyword,
-  .cv-project-keyword,
-  .cv-interest-keyword {
-    border: 1px solid #ccc;
-    background-color: transparent;
-  }
-}
-
-
-/* Estilos para secciones colapsables con <details> y <summary> */
-details > summary {
-  cursor: pointer;
-  font-weight: bold;
-  margin-bottom: 5px;
-  padding: 5px;
-  background-color: #f0f0f0;
-  border-radius: 4px;
-}
-
-details[open] > summary {
-  color: #0366d6;
-  background-color: #d0e6ff;
-}
-
-details {
-  margin-bottom: 15px;
-  padding-left: 10px;
-}
-
-
-/* CV Template Styles */
-.cv-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #0a0f1c; /* Fondo oscuro para contraste */
-  padding: 2rem;
-  border-radius: 10px;
-}
-
-/* Header Styles */
-.cv-header {
-  margin-bottom: 2rem;
-  border-bottom: 2px solid #1e293b;
-  padding-bottom: 1.5rem;
-  background-color: #121b2e;
-  padding: 1.5rem;
-  border-radius: 8px;
-}
-
-.cv-header h1 {
-  margin-bottom: 0.5rem;
-  color: #22d3ee !important; /* Cyan brillante */
-  font-size: 2.2rem;
-}
-
-.cv-contact-info {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.cv-contact-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #cbd5e1; /* Texto gris claro */
-}
-
 .cv-profiles {
   display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .cv-profile-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
+  transition: transform 0.2s ease;
+}
+
+.cv-profile-item:hover {
+  transform: translateX(4px);
 }
 
 .cv-profile-item a {
-  color: #22d3ee !important; /* Cyan para enlaces */
+  color: var(--accent-cyan) !important;
   text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.cv-profile-item a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-accent);
+  transition: width 0.3s ease;
+}
+
+.cv-profile-item a:hover::after {
+  width: 100%;
 }
 
 .cv-profile-item a:hover {
-  text-decoration: underline;
-  color: #67e8f9 !important; /* Cyan más claro al hover */
+  color: var(--accent-cyan-light) !important;
 }
 
 .cv-header p {
-  color: #cbd5e1 !important; /* Texto gris claro */
-  margin-top: 0.5rem;
+  color: var(--text-secondary) !important;
+  margin-top: 1rem;
   font-size: 1.1rem;
+  line-height: 1.6;
+  font-style: italic;
+  opacity: 0.9;
 }
 
-/* Section Styles */
+/* ====================================
+   SECTION STYLES
+   ==================================== */
+
 .cv-section {
-  margin-bottom: 2rem;
-  background-color: #121b2e; /* Fondo azul oscuro */
-  padding: 1.5rem;
-  border-radius: 8px;
-  border-left: 4px solid #22d3ee; /* Borde izquierdo cyan */
+  margin-bottom: 2.5rem;
+  background: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--accent-cyan);
+  transition: all 0.3s ease;
+  animation: slideInUp 0.6s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cv-section:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
 }
 
 .cv-section h2 {
-  border-bottom: 1px solid #1e293b; /* Borde más suave */
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--border-subtle);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  color: #22d3ee !important; /* Cyan para títulos */
-  font-size: 1.5rem;
+  gap: 0.75rem;
+  color: var(--accent-cyan) !important;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.3px;
 }
 
 .cv-section h2 i {
-  color: #22d3ee !important; /* Cyan para iconos */
+  color: var(--accent-cyan) !important;
+  font-size: 1.5rem;
+  filter: drop-shadow(0 0 8px rgba(34, 211, 238, 0.3));
 }
 
-/* Item Styles */
+/* ====================================
+   ITEM STYLES
+   ==================================== */
+
 .cv-item {
-  margin-bottom: 1.5rem;
-  padding: 1.2rem;
-  background-color: #1a2332; /* Fondo ligeramente más claro para items */
-  border-radius: 6px;
-  border: 1px solid #1e293b;
+  margin-bottom: 1.75rem;
+  padding: 1.5rem;
+  background: var(--bg-tertiary);
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  background: var(--gradient-accent);
+  transition: height 0.3s ease;
+}
+
+.cv-item:hover {
+  border-color: var(--accent-cyan);
+  box-shadow: var(--shadow-md);
+  transform: translateX(4px);
+}
+
+.cv-item:hover::before {
+  height: 100%;
 }
 
 .cv-item:last-child {
@@ -365,106 +309,200 @@ details {
 .cv-item-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
 .cv-item-title {
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: #22d3ee !important; /* Cyan para títulos de items */
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--accent-cyan) !important;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+.cv-item:hover .cv-item-title {
+  color: var(--accent-cyan-light) !important;
 }
 
 .cv-item-date {
-  color: #94a3b8; /* Gris más claro para fechas */
+  color: var(--text-muted);
   font-size: 0.9rem;
+  font-weight: 500;
+  background: var(--bg-accent);
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-accent);
+  white-space: nowrap;
 }
 
 .cv-item-subtitle {
-  color: #94a3b8; /* Gris para subtítulos */
-  margin-bottom: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
   font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cv-item-subtitle::before {
+  content: '●';
+  color: var(--accent-cyan);
+  font-size: 0.6rem;
 }
 
 .cv-item-summary {
-  margin-bottom: 0.8rem;
-  color: #cbd5e1 !important; /* Texto gris claro */
+  margin-bottom: 1rem;
+  color: var(--text-secondary) !important;
+  line-height: 1.7;
 }
 
 .cv-item-highlights {
-  margin-top: 0.8rem;
+  margin-top: 1rem;
+}
+
+.cv-item-highlights ul {
   padding-left: 1.5rem;
+  list-style: none;
 }
 
 .cv-item-highlights li {
-  margin-bottom: 0.4rem;
-  color: #cbd5e1 !important; /* Texto gris claro */
-}
-
-.cv-item-courses ul {
-  margin-top: 0.25rem;
+  margin-bottom: 0.6rem;
+  color: var(--text-secondary) !important;
+  position: relative;
   padding-left: 1.5rem;
+  line-height: 1.6;
 }
 
-.cv-item-courses li {
-  margin-bottom: 0.25rem;
-  color: #cbd5e1 !important; /* Texto gris claro */
+.cv-item-highlights li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent-cyan);
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
-/* Skills Styles */
+/* ====================================
+   SKILLS STYLES
+   ==================================== */
+
 .cv-skills {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.5rem;
 }
 
 .cv-skill-category {
-  background-color: #1a2332; /* Mismo fondo que items */
-  padding: 1rem;
-  border-radius: 6px;
-  border: 1px solid #1e293b;
+  background: var(--bg-tertiary);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.cv-skill-category:hover {
+  border-color: var(--accent-cyan);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
 }
 
 .cv-skill-category h3 {
-  margin-bottom: 0.8rem;
-  color: #22d3ee !important; /* Cyan para títulos de categorías */
-  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--accent-cyan) !important;
+  font-size: 1.15rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cv-skill-category h3::before {
+  content: '◆';
+  color: var(--accent-cyan);
+  font-size: 0.8rem;
 }
 
 .cv-skill-keywords {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.6rem;
 }
 
 .cv-skill-keyword {
-  background-color: #1e293b; /* Fondo oscuro para etiquetas */
-  color: #cbd5e1 !important; /* Texto gris claro */
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px; /* Más redondeado */
+  background: var(--bg-accent);
+  color: var(--text-secondary) !important;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
   font-size: 0.85rem;
-  border: 1px solid #334155;
+  border: 1px solid var(--border-accent);
+  transition: all 0.3s ease;
+  cursor: default;
+  font-weight: 500;
 }
 
-/* Project Styles */
+.cv-skill-keyword:hover {
+  background: var(--accent-cyan);
+  color: var(--bg-primary) !important;
+  border-color: var(--accent-cyan);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(34, 211, 238, 0.3);
+}
+
+/* ====================================
+   PROJECT KEYWORDS
+   ==================================== */
+
 .cv-project-keywords {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.8rem;
+  gap: 0.6rem;
+  margin-top: 1rem;
 }
 
 .cv-project-keyword {
-  background-color: #0f172a; /* Fondo más oscuro */
-  color: #22d3ee !important; /* Cyan para texto */
-  padding: 0.25rem 0.75rem;
+  background: var(--bg-accent);
+  color: var(--accent-cyan) !important;
+  padding: 0.35rem 0.85rem;
   border-radius: 20px;
   font-size: 0.85rem;
-  border: 1px solid #22d3ee; /* Borde cyan */
+  border: 1.5px solid var(--accent-cyan);
+  transition: all 0.3s ease;
+  cursor: default;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Languages Styles */
+.cv-project-keyword::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--accent-cyan);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.cv-project-keyword:hover {
+  color: var(--bg-primary) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(34, 211, 238, 0.4);
+}
+
+.cv-project-keyword:hover::before {
+  left: 0;
+}
+
+/* ====================================
+   LANGUAGES STYLES
+   ==================================== */
+
 .cv-languages {
   display: flex;
   flex-wrap: wrap;
@@ -474,192 +512,318 @@ details {
 .cv-language {
   display: flex;
   flex-direction: column;
-  background-color: #1a2332;
-  padding: 1rem;
-  border-radius: 6px;
-  border: 1px solid #1e293b;
-  min-width: 150px;
-}
-
-.cv-language-name {
-  font-weight: bold;
-  color: #22d3ee !important; /* Cyan para nombres de idiomas */
-}
-
-.cv-language-fluency {
-  color: #94a3b8; /* Gris para nivel */
-  font-size: 0.9rem;
-  margin-top: 0.25rem;
-}
-
-/* Interests Styles */
-.cv-interests {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-.cv-interest h3 {
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.cv-interest-keywords {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.cv-interest-keyword {
-  background-color: #f9f9f9;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-
-/* References Styles */
-.cv-references {
-  font-style: italic;
-  color: #94a3b8 !important; /* Gris para referencias */
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid #1e293b;
-  text-align: center;
-  background-color: #121b2e;
-  padding: 1rem;
-  border-radius: 6px;
-}
-
-/* Estilos para secciones colapsables con <details> y <summary> */
-details > summary {
-  cursor: pointer;
-  font-weight: bold;
-  margin-bottom: 5px;
-  padding: 8px 12px;
-  background-color: #1a2332; /* Fondo oscuro */
-  border-radius: 6px;
-  color: #22d3ee !important; /* Cyan para resumen */
-  border: 1px solid #1e293b;
+  background: var(--bg-tertiary);
+  padding: 1.25rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+  min-width: 180px;
   transition: all 0.3s ease;
-}
-
-details > summary:hover {
-  background-color: #1e293b;
-}
-
-details[open] > summary {
-  color: #67e8f9 !important; /* Cyan más claro cuando está abierto */
-  background-color: #1e293b;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom: 1px solid #22d3ee;
-}
-
-details {
-  margin-bottom: 15px;
-  padding-left: 0;
-  background-color: #1a2332;
-  border-radius: 6px;
-  border: 1px solid #1e293b;
+  position: relative;
   overflow: hidden;
 }
 
+.cv-language::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-accent);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.cv-language:hover {
+  border-color: var(--accent-cyan);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.cv-language:hover::before {
+  transform: scaleX(1);
+}
+
+.cv-language-name {
+  font-weight: 600;
+  color: var(--accent-cyan) !important;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.cv-language-fluency {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ====================================
+   COLLAPSIBLE DETAILS
+   ==================================== */
+
+details {
+  margin-bottom: 1rem;
+  background: var(--bg-accent);
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
 details[open] {
-  border-color: #22d3ee;
+  border-color: var(--accent-cyan);
+  box-shadow: var(--shadow-sm);
+}
+
+details > summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.9rem 1.2rem;
+  background: var(--bg-tertiary);
+  color: var(--accent-cyan) !important;
+  border: none;
+  transition: all 0.3s ease;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary::before {
+  content: '▸';
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+  color: var(--accent-cyan);
+}
+
+details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+details > summary:hover {
+  background: var(--bg-secondary);
+  color: var(--accent-cyan-light) !important;
+  padding-left: 1.5rem;
+}
+
+details[open] > summary {
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
 }
 
 details > div,
 details > ul {
-  padding: 12px;
+  padding: 1.2rem;
   margin: 0;
-  color: #cbd5e1 !important; /* Texto gris claro */
+  color: var(--text-secondary) !important;
 }
 
 details ul {
-  padding-left: 1.5rem;
+  padding-left: 2rem;
 }
 
-/* Estilos generales para texto */
+details ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* ====================================
+   REFERENCES STYLES
+   ==================================== */
+
+.cv-references {
+  font-style: italic;
+  color: var(--text-muted) !important;
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  border-top: 1px solid var(--border-subtle);
+  text-align: center;
+  background: var(--bg-secondary);
+  border-radius: 10px;
+}
+
+.cv-references p {
+  margin-bottom: 0.5rem;
+}
+
+/* ====================================
+   GENERAL TEXT & LINKS
+   ==================================== */
+
 .cv-container p,
 .cv-container li,
 .cv-container span:not(.cv-item-title):not(.cv-language-name):not(.cv-project-keyword):not(.cv-skill-keyword) {
-  color: #cbd5e1 !important; /* Texto gris claro por defecto */
+  color: var(--text-secondary) !important;
 }
 
-/* Estilos para enlaces dentro del CV */
 .cv-container a {
-  color: #22d3ee !important;
+  color: var(--accent-cyan) !important;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .cv-container a:hover {
-  color: #67e8f9 !important;
-  text-decoration: underline;
+  color: var(--accent-cyan-light) !important;
 }
 
-/* Print Styles */
+/* ====================================
+   PRINT STYLES
+   ==================================== */
+
 @media print {
   .cv-container {
     max-width: 100%;
-    background-color: white !important;
+    background: white !important;
+    box-shadow: none !important;
+    padding: 1rem;
+  }
+
+  .cv-container::before {
+    display: none;
+  }
+
+  .cv-container *,
+  .cv-container p,
+  .cv-container li,
+  .cv-container span {
     color: black !important;
+    background: transparent !important;
   }
-  
-  .cv-container * {
-    color: black !important;
-    background-color: transparent !important;
-  }
-  
-  .cv-header {
-    border-bottom-color: #ccc;
-  }
-  
-  .cv-section h2 {
-    border-bottom-color: #ccc;
-  }
-  
-  .cv-skill-keyword,
-  .cv-project-keyword,
-  .cv-interest-keyword {
-    border: 1px solid #ccc;
-    background-color: transparent !important;
-  }
-  
+
+  .cv-header,
   .cv-section,
   .cv-item,
   .cv-skill-category,
   .cv-language {
+    background: white !important;
     border: 1px solid #ddd !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+
+  .cv-skill-keyword,
+  .cv-project-keyword {
+    border: 1px solid #999 !important;
+    background: transparent !important;
+  }
+
+  details {
+    border: 1px solid #ddd !important;
+  }
+
+  details > summary {
+    background: #f5f5f5 !important;
   }
 }
 
-/* Responsive Design */
+/* ====================================
+   RESPONSIVE DESIGN
+   ==================================== */
+
 @media (max-width: 768px) {
   .cv-container {
-    padding: 1rem;
+    padding: 1.5rem;
+    border-radius: 12px;
   }
-  
+
+  .cv-header h1 {
+    font-size: 2rem;
+  }
+
+  .cv-section h2 {
+    font-size: 1.5rem;
+  }
+
   .cv-item-header {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
   }
-  
+
+  .cv-item-date {
+    align-self: flex-start;
+  }
+
   .cv-skills {
     grid-template-columns: 1fr;
   }
-  
+
   .cv-languages {
     flex-direction: column;
-    gap: 1rem;
   }
-  
+
   .cv-language {
     min-width: auto;
   }
-  
+
   .cv-contact-info {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
+  }
+
+  .cv-profiles {
+    flex-direction: column;
+    gap: 0.75rem;
   }
 }
-<link rel="stylesheet" href="/assets/css/cv-style.css">
+
+@media (max-width: 480px) {
+  .cv-container {
+    padding: 1rem;
+  }
+
+  .cv-header,
+  .cv-section,
+  .cv-item {
+    padding: 1rem;
+  }
+
+  .cv-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .cv-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .cv-item-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* ====================================
+   ACCESSIBILITY
+   ==================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+a:focus,
+summary:focus {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 2px;
+}
+
+/* ====================================
+   UTILITY CLASSES
+   ==================================== */
+
+.text-gradient {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow {
+  box-shadow: var(--shadow-glow);
+}
